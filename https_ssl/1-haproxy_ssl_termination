@@ -19,11 +19,11 @@ frontend http_front
     default_backend web_servers
 
 frontend https_front
-    bind *:443 ssl crt /etc/ssl/certs/www.mellowjr.tech.pem
+    bind *:443 ssl crt /etc/ssl/certs/www.fiacrejr.tech.pem
     default_backend web_servers
 
 backend web_servers
     balance roundrobin
     option httpchk GET /
-    server web-01 18.130.141.151:80 check
-    server web-02 18.171.135.64:80 check
+    server web-01 18.171.186.193:80 check
+    server web-02 13.135.166.13:80 check
